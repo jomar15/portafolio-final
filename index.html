@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<title>Portafolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url("goku1.jpg");
+    min-height: 100%;
+    background-position: right;
+    background-size: 40%;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+	
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 200%;
+    }
+}
+
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+  	<img src="https://ramonriv.github.io/portafoliocss/Inter.gif" style="width:40%";>
+    <h1 align="center">Jomar Santiago Rivera</h1>
+	<h2 align="center">B00307722</h2>
+	<h3 align="center">Sistemas y Redes de Computadoras</h3>
+  </div>
+  <div class="w3-display-topleft w3-round w3-large">
+    <p><button onclick="document.getElementById('resume').style.display='block'" class="w3-button w3-red w3-mobile">Resume</button></p>
+	 <p><button onclick="document.getElementById('bosquejo').style.display='block'" class="w3-button w3-purple w3-mobile">Bosquejo</button></p>
+	  <p><button onclick="document.getElementById('forma').style.display='block'" class="w3-button w3-blue w3-mobile">Forma</button></p>
+	   <p><button onclick="document.getElementById('tablaDtemp').style.display='block'" class="w3-button w3-yellow w3-mobile">TablaDtemp</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-green w3-mobile">Contacto</button></p>
+  </div>
+
+</div>
+
+<!-- resume -->
+<div id="resume" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-red w3-display-container">
+      <span onclick="document.getElementById('resume').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Resume</h1>
+    </div>
+    <div class="w3-container">
+      <h2>Informacion</h2>
+	<div class="a">
+      <p>Jomar Santiago Rivera</p>
+         
+	</div>
+    <h2>Ubicacion y Telefono</h2>
+	<div class="a">
+      <p>Barrio Cedro Abajo Sector 4 Calles<br>
+      <p>Naranjito, Puerto Rico<br>
+		 <p(787)-426-2389</p>
+		 
+	</div>
+	
+    <h2>Educacion</h2>
+	<div class="a">
+       <p>Escula Superior Francisco Morales <br>
+          08/2007 - 05/2009</p>
+	</div>
+
+    
+  </div>
+</div>
+</div>
+</div>
+
+<!-- bosquejo -->
+	 <div id="bosquejo" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-purple w3-display-container">
+      <span onclick="document.getElementById('bosquejo').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Bosquejo</h1>
+	  </div>
+	      <div class="w3-container">
+    <p align = "center"><strong>UNIVERSIDAD INTERAMERICANA DE PUERTO RICO <br />
+          RECINTO DE BAYAMON <br />
+          DEPARTAMENTO DE INFORMATICA <br />
+          PROGRAMA DE CIENCIAS DE COMPUTADORASM</strong></p>
+      <p align = "center"><strong>PRONTUARIO</strong></p>
+   <ol type = "I">
+      <li><strong>INFORMACION GENERAL</strong></li>
+   </ol>
+        <pre><font face="Raleway">
+	Titulo del Curso				:         		DESARROLLO DE PAGINA WEB
+	Codigo y Numero  			:            		COMP 2025
+	Creditos						:			Tres(3)
+	Termino Academico			:
+	Profesor						:
+	Horas de Oficina				:
+	Telefono de la Oficina			:
+	Correo Electronico			:
+      </pre>
+      </font>
+   <ol type="I" start="2">
+      <li><strong>DESCRIPCION</strong></li>
+   </ol>
+      <p>Discusion de conceptos de diseño y desarrollo de paginas Web. Aplicacion de los lenguajes HTML y JavaScript conjuntamente con CSS para la creacion de paginas Web. Creacion y adaptación de elementos de multimedios para ser utilizados en paginas interactivas. Requiere 45 horas de conferencia-laboratorio.3 creditos</p>
+   <ol type="I" start="3">
+      <li><strong>OBJETIVOS</strong></li>
+   </ol>
+      <p>Se espera que al finalizar el curso, el estudiante pueda:</p>
+   <ol type="1">
+      <li>Discutir conceptos de diseno y desarrollo de páginas Web.</li>
+      <li>Aplicar  los  lenguajes  HTML  y  JavaScript  conjuntamente  con  CSS    para  la creación de páginas Web.</li>
+      <li>Crear  y  adaptar  elementos  multimedios  para  ser  utilizadas  en  paginas interactivas.</li>
+      <li>Entender las implicaciones éticas, sociales y legales inherentes a la disciplina.</li>
+   </ol>
+   <ol type="I" start="4">
+      <li><strong>CONTENIDO TEMÁTICO</strong></li>
+   <ol type="A">
+      <li>Conocer los editores del lenguaje HTML.</li>
+   <ol type="1">
+      <li>Historia de los editores de HTML</li>
+      <li>Introducción a HTML.</li>
+   <ol type="a">
+      <li>Listas numeradas, no numeradas y de definición</li>
+      <li>Enlaces internos y externos</li>
+      <li>Incorporación detablas, imágenes y videos</li>
+      <li>Diseño de formularios e incorporación de “meta elements”</li>
+   </ol>
+   </ol>
+   </ol>
+   </ol>
+   <ol>
+   <ol type="A" start="2">
+      <li>Creación de páginas interactivas.</li>
+   <ol type="1">
+      <li>Creación de páginas interactivas utilizando un editor de HTML.</li>
+      <li>Publicación de páginas interactivas.</li>
+   </ol>
+   </ol>
+   </ol>
+   <ol>
+   <ol type="A" start="3">
+      <li>Introducción a CSS</li>
+   <ol type="1">
+      <li>Uso de CSS.</li>
+      <li>Reglas de CSS.</li>
+      <li>Incorporación de CSS a una página interactiva.</li>
+   </ol>
+   </ol>
+   </ol>
+   <ol>
+   <ol type="A" start="4">
+      <li>Introducción a JavaScript</li>
+   <ol type="1">
+      <li>Definición.</li>
+      <li>Incorporación dev un javascipt a páginas interactivas.</li>
+      <li>Integración de elementos visuales que utilizan animación vectorial.</li>
+   </ol>
+   </ol>
+   </ol>
+   <ol type="I" start="5">
+      <li><strong>ACTIVIDADES</strong></li>
+   <ol type="1">
+      <li>Conferencias por el profesor</li>
+      <li>Ejercicios de práctica</li>
+      <li>Discusión de lecturas y ejercicios</li>
+      <li>Ejercicios de aplicación</li>
+      <li>Autoevaluación</li>
+      <li>Trabajo colaborativo</li>
+      <li>Vídeos</li>
+      <li>Lecturas y ejercicios suplementarios</li>
+      <li>Uso de estrategias de Calidad Total y “Assessment”</li>
+   <ol type="a">
+      <li>Ejercicios de reflexión (A)</li>
+      <li>Autoevaluación (A, CT)</li>
+      <li>“One minute paper” (A)</li>
+      <li>Aprendizaje cooperativo (A, CT)</li>
+      <li>Resumir en una oración (A)</li>
+      <li>Resumir en una palabra (A)</li>
+      <li>Trabajos en grupos (A)</li>
+      <li>Torbellino de ideas (A)</li>
+      <li>Portafolio (A)</li>
+   </ol>
+   </ol>
+   </ol>
+   <ol type="I" start="6">
+      <li><strong>EVALUACIÓN</strong></li>
+   </ol>
+   <table border="0" width="50%">
+      <tr>
+          <td bgcolor="white">Criterio</td>
+          <td align="center" bgcolor="white">Puntuación</td>
+          <td align="center" bgcolor="white">% de la Nota Final</td>
+      </tr>
+      <tr>
+          <td>Examen #1</td>
+          <td align="center">100</td>
+          <td align="center">30</td>
+      </tr>
+      <tr>
+          <td>Examen #2</td>
+          <td align="center">100</td>
+          <td align="center">30</td>
+      </tr>
+      <tr>
+          <td>Examen #3</td>
+          <td align="center">100</td>
+          <td align="center">30</td>
+      </tr>
+      <tr>
+          <td>Asignaciones</td>
+          <td align="center">100</td>
+          <td align="center">10</td>
+      </tr>
+      <tr>
+          <td>Total</td>
+          <td align="center">400</td>
+          <td align="center">100</td>  
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+ <!-- forms -->
+<div id="forma" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-blue w3-display-container">
+      <span onclick="document.getElementById('forma').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Forma</h1>
+	  </div>
+	      <div class="w3-container">
+	  <form action="https://www.w3schools.com/action_page.php" target="_blank">
+   <input class="w3-input w3-padding-16" type="text" name="primernombre" size="25" value="First name*"required>
+   <input class="w3-input w3-padding-16" type="text" name="apellido" size="25" value="Last name*"required>
+    <br>
+    Email*<br>
+   <input class="w3-input w3-padding-16" type="text" name="email" size="55" required>
+    <br><br>
+    NumeroCelular<br>
+   <input class="w3-input w3-padding-16" type="text" name="phone" size="55"required>
+    <br><br>
+  
+    <h3>Posicion</h3>
+  
+    Posicion porque aplicas*<br>
+   <input class="w3-input w3-padding-16" type="text" name="homephone" size="55" required>
+    <br><br>
+    Subir Resume<br><br>
+   <input type="file" name="resumefile" size="55" required>
+    <br><br>
+    PaginaWeb <br>
+   <input class="w3-input w3-padding-16" type="text" name="portfolioweb" size="55" required>
+    <br><br>
+    Requisito de Salario<br>
+   <input class="w3-input w3-padding-16" type="text" name="salary" size="55" required>
+    <br><br>
+    Cuando Puedes Empezar<br>
+   <input class="w3-input w3-padding-16" type="text" name="start" size="55"required>
+    <br><br>
+   Estas dispuesto a Mudarte<br>
+   <input type="radio" name="willing" value="Yes">si<br>
+   <input type="radio" name="willing" value="No">No<br>
+   <input type="radio" name="willing" value="notsure">No estoy seguro
+    <br><br>
+    Ultimo Trabajo que tuviste<br>
+   <input class="w3-input w3-padding-16" type="text" name="companyworked" size="55" required>
+    <br><br>
+    Comentarios<br>
+     <textarea class="w3-input w3-padding-16" name="comments" rows="10" cols="56" required>
+     </textarea>
+    <br><br>
+   <input button class="w3-button w3-light-grey w3-padding-large" type="submit">
+   </form> 
+    </div>
+	</div>
+	</div>
+	</div>
+	
+	
+    <!-- Table -->
+	<div id="tablaDtemp" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-yellow w3-display-container">
+      <span onclick="document.getElementById('tablaDtemp').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>TablaDtemp</h1>
+	  </div>
+	      <div style="overflow-x:auto;">
+	<style type="text/css">
+tr#mytr {font-style: italic; 
+		font-style: bold;
+		color: white}
+th#myth {font-style: bold; 
+		font-size: 20px;
+        font-family: Courier New;
+		color:red;
+		backgroud-color: lightblue}
+#customers tr: hover{background-color:#ddd;}
+   </style>
+   <center>
+  <h2>Conversion de Temperatura</h2>
+
+<p id="demo"></p>
+ <script>
+function kelvin(c) { return c+270 ;}
+function fahrenheit(c){ return 9/5*c +32;}
+function rankine(c){ return 9/5*c +492;}
+function reaumur(c){ return 4/5*c;}
+var temp = ["Celcious", "Kelvin", "Fahrenheit", "Rankine", "Reaumur", "Estado de Agua"];
+var text = "<table border=1>";
+var i, c;
+for (i = 0; i < temp.length; i++) {
+	text += "<th id=myth>"+ temp[i] + "</th>";
+}
+for(c=-270;c<=200;c +=10)
+{  if(c==0)
+	{text += "<tr id=mytr bgcolor=green><td>" + c ;
+     text +="</td><td>"+kelvin(c)+"</td><td>"+fahrenheit(c);
+     text +="</td><td>"+rankine(c)+"</td><td>"+reaumur(c);
+     text +="</td><td><img src= 'https://ramonriv.github.io/javatemp/icecube2.jpg' width=40 height=40></td></tr>";
+     }
+     if(c==100)
+     {text += "<tr id=mytr bgcolor=green><td>" + c ;
+     text +="</td><td>"+kelvin(c)+"</td><td>"+fahrenheit(c);
+     text +="</td><td>"+rankine(c)+"</td><td>"+reaumur(c);
+     text +="</td><td><img src= 'https://ramonriv.github.io/javatemp/Capture.PNG' width=40 height=40></td></tr>";
+     } //end if
+     else
+    {
+    if(c>=-270 && c<0)
+    {
+    text += "<tr><td>" + c ;
+    text += "</td><td>"+kelvin(c)+"</td><td>"+fahrenheit(c);
+    text += "</td><td>"+rankine(c)+"</td><td>"+reaumur(c);
+    text += "</td><td><img src= 'https://ramonriv.github.io/javatemp/icecube.png' width=40 height=40></td></tr>";
+    }
+   
+    if(c>0 && c<100)
+    {
+    text += "<tr><td>" + c ;
+    text += "</td><td>"+kelvin(c)+"</td><td>"+fahrenheit(c);
+    text += "</td><td>"+rankine(c)+"</td><td>"+reaumur(c);
+    text += "</td><td><img src= 'https://ramonriv.github.io/javatemp/watersplatter.jpg' width=40 height=40></td></tr>";
+    }
+    
+    if(c>100)
+    {
+    text += "<tr><td>" + c ;
+    text += "</td><td>"+kelvin(c)+"</td><td>"+fahrenheit(c);
+    text += "</td><td>"+rankine(c)+"</td><td>"+reaumur(c);
+    text += "</td><td><img src= 'https://ramonriv.github.io/javatemp/cloud.png' width=40 height=40></td></tr>";   
+    }
+  } //end else
+} //end for
+document.getElementById("demo").innerHTML = text +"</table>";
+</script>
+</center>
+    </div>
+	</div>
+  </div>
+  </div>
+    
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-green">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+   </div>
+    <div class="w3-container">
+     <h5>Phone: 787-426-2389</h5>
+      <h5>Email: jomar.santiago@hotmail.com</h5>
+	  <h5>Github: https://github.com/jomar15</h5>
+    </div><br>
+    
+
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nombre" required name="Nombre"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subjeto" required name="Subjeto"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Mensaje" required name="Mensaje"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> Mandar Mensaje
+        </button>
+      </p>
+    </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
